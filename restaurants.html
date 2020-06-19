@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Delivery Food - доставка еды на дом</title>
+ <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/animate.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.svg" alt="Logo" class="logo">
+      </a>
+      <input type="text" class="input input-address" placeholder="Адрес доставки">
+      <div class="buttons">
+        <button class="button button-primary button-auth" id="log-in-btn">
+          <img src="./img/user.svg" alt="user" class="button-icon">
+          <span class="button-text">Войти</span>
+        </button>
+        <span class="user-name" id="user"></span>
+        <button class="button button-primary button-out" id="log-out">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="button-text">Выйти</span>
+        </button>
+        <button class="button" id="cart-button">
+          <img src="./img/basket.svg" alt="basket" class="button-icon">
+          <span class="button-text">Корзина</span>
+        </button>
+      </div>
+    </header>
+  </div>
+  <main class="main">
+    <div class="container">
+      <section class="restaurants">
+        <div class="section-heading">
+          <h2 class="section-title">FoodBand</h2>
+          <div class="card-info">
+            <div class="card-rating"><img src="/img/rating.svg" alt="rating-card" class="rating-star">4.5</div>
+            <div class="card-price">От 900 ₽</div>
+            <div class="card-category">Пицца</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <a href="index.html" class="logo-link footer-logo">
+          <img src="img/logo.svg" alt="Logo" class="logo">
+        </a>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Ресторанам</a>
+          <a href="#" class="footer-link">Курьерам</a>
+          <a href="#" class="footer-link">Пресс-центр</a>
+          <a href="#" class="footer-link">Контакты</a>
+        </nav>
+        <div class="social-links">
+          <img src="/img/insta.svg" alt="instagram" class="social-icon">
+          <img src="/img/fb.svg" alt="facebook" class="social-icon">
+          <img src="/img/vk.svg" alt="vk" class="social-icon">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Корзина</h3>
+        <button class="close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+        <div class="food-row">
+          <span class="food-name">Ролл угорь стандарт</span>
+          <strong class="food-price">250 ₽</strong>
+          <div class="food-counter">
+            <button class="counter-button">-</button>
+            <span class="counter">1</span>
+            <button class="counter-button">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="pricetag">1250 ₽</span>
+        <button class="button button-primary modal-button">Оформить заказ</button>
+        <button class="button modal-button">Отменить</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+      <div class="modal-header">
+        <h3 class="modal-title">Профиль</h3>
+        <button class="close close-auth">&times;</button>
+      </div>
+			<form id="logInForm">
+        <div class="form-body">
+          <input class="input form-input" id="login" type="text" name="username" placeholder="Введите логин" required>
+          <input class="input form-input" id="password" type="password" name="password" placeholder="Введите пароль" required>
+          <input class="button button-primary button-login" type="submit" name="submit" Value="Войти">
+          <a class="pass-lost" href="#">Забыли пароль?</a>
+          <a class="registration" href="#">Регистрация</a>
+        </div>
+      </form>
+		</div>
+		<!-- /.modal-dialog -->
+  </div>
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
